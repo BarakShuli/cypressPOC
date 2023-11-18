@@ -7,10 +7,10 @@ phases:
     runtime-versions:
       nodejs: 18
     commands:
-      #- curl -sS -o - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+      curl https://intoli.com/install-google-chrome.sh | bash
       #- echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
       #- apt-get -y update
-      - yum -y install google-chrome-stable
+      #- yum -y install google-chrome-stable
       #- sudo apt-get install
       #- apt-get update
       - echo Installing Chrome
