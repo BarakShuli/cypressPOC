@@ -10,11 +10,11 @@ phases:
       #- curl -sS -o - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
       #- echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
       #- apt-get -y update
-      #- apt-get -y install google-chrome-stable
+      - yum -y install google-chrome-stable
       #- sudo apt-get install
       #- apt-get update
       - echo Installing Chrome
-      - sudo install libatk1.0-0
+      - yum -y install libatk1.0-0
       #- apt-get -y install google-chrome-stable
       - npm install
   pre_build:
