@@ -7,14 +7,14 @@ phases:
     runtime-versions:
       nodejs: 18
     commands:
-      curl https://intoli.com/install-google-chrome.sh | bash
+      #curl https://intoli.com/install-google-chrome.sh | bash
       #- echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
       #- apt-get -y update
       #- yum -y install google-chrome-stable
       #- sudo apt-get install
       #- apt-get update
-      - echo Installing Chrome
-      - yum -y install libatk1.0-0
+      #- echo Installing Chrome
+      - sudo yum install -y libXcursor libXdamage libcups libXss libXrandr \ cups-libs dbus-glib libXinerama cairo cairo-gobject pango
       #- apt-get -y install google-chrome-stable
       - npm install
   pre_build:
