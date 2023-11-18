@@ -8,7 +8,7 @@ describe('AppComponent', () => {
     }).compileComponents();
   });
 
-  it('should crdddddeate the app', () => {
+  it('should crdddddeate the ddd app', () => {
     const fixture = TestBed.createComponent(AppComponent);
     
   });
