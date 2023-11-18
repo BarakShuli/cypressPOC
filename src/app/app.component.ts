@@ -11,14 +11,11 @@ import { Router, RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   private route = inject(Router); 
-  title = 'cypressPOC';
+  title = 'cypressPOC99';
   constructor() {}
 
   navigateToSecondPage() {
-    // this.route.navigateByUrl('/second-page');
-    // setTimeout(() => {
       console.log('here');
       this.route.navigate(['/secondPage']);
-    // }, 500);
   }
 }
