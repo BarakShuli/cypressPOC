@@ -12,5 +12,7 @@ phases:
     commands:
       - npm run test:ci
       - npm run build
-
+# post_build:
+#    commands:
+#      - aws s3 sync $BUILD_Folder s3://$S3_BUCKET_NAME
 
