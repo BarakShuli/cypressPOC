@@ -14,7 +14,7 @@ phases:
       #- sudo apt-get install
       #- apt-get update
       #- echo Installing Chrome
-      - sudo yum install -y libXcursor libXdamage libcups libXss libXrandr \ cups-libs dbus-glib libXinerama cairo cairo-gobject pango
+      - sudo yum install -y libXcursor libXdamage libcups libXss libXrandr
       #- apt-get -y install google-chrome-stable
       - npm install
   pre_build:
