@@ -14,7 +14,7 @@ phases:
       #- sudo apt-get install
       #- apt-get update
       - echo Installing Chrome
-      - apt-get -y install google-chrome-stable
+      #- apt-get -y install google-chrome-stable
       - npm install
   pre_build:
     commands:
