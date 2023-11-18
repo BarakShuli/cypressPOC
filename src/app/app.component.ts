@@ -11,7 +11,7 @@ import { Router, RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   private route = inject(Router); 
-  title = 'cypressPOC99';
+  title = 'cypressPOC995555';
   constructor() {}
 
   navigateToSecondPage() {
