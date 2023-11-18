@@ -1,0 +1,23 @@
+// write yamel buildspec template here
+```
+version: 0.2
+env:
+  variables:
+    BUILD_Folder: "dist"
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install
+  build:
+    commands:
+      - echo Build started on `date`
+      - npm run build
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Uploading artifacts...
+#      - aws s3 sync $BUILD_Folder s3://$S3_BUCKET_NAME
+
