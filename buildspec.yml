@@ -14,7 +14,7 @@ phases:
       #- sudo apt-get install
       #- apt-get update
       - echo Installing Chrome
-      - sudo apt install libatk1.0-0
+      - sudo install libatk1.0-0
       #- apt-get -y install google-chrome-stable
       - npm install
   pre_build:
