@@ -10,6 +10,7 @@ phases:
       - npm install
   build:
     commands:
+      - npm run test:ci
       - npm run build
 # post_build:
 #    commands:
