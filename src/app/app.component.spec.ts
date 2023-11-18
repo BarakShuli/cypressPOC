@@ -8,12 +8,10 @@ describe('AppComponent', () => {
     }).compileComponents();
   });
 
-
-  
+  // some test
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
     
   });
-
-  
+ 
 });
