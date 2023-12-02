@@ -14,15 +14,17 @@ phases:
       #- sudo apt-get install
       #- apt-get update
       #- echo Installing Chrome
-      - sudo yum install -y libXcursor libXdamage libXrandr
+      
       #- apt-get -y install google-chrome-stable
       - npm install
   pre_build:
     commands:
       - export CHROME_BIN=/usr/bin/google-chrome
       - npm install -g @angular/cli      
-      - apt-get -y install google-chrome-stable
-      #- npm run test:ci
+      - sudo yum install curl
+      - sudo yum install -y libXcursor libXdamage libXrandr
+      - sudo yum -y install google-chrome-stable
+      - npm run test:ci
   build:
     commands:
       - npm run build
