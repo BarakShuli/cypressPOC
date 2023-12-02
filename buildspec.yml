@@ -21,6 +21,8 @@ phases:
     commands:
       - export CHROME_BIN=/usr/bin/google-chrome
       - npm install -g @angular/cli
+      - apt-get -y update
+      - apt-get -y install google-chrome-stable
       #- npm run test:ci
   build:
     commands:
