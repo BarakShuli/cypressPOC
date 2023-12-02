@@ -24,6 +24,7 @@ phases:
       - export CHROME_BIN=/usr/bin/google-chrome
       - npm install -g @angular/cli
       - npm i -D puppeteer
+      - sudo yum install atk.x86_64
       #- sudo yum install -y libXcursor libXdamage libcups libXss libXrandr \ cups-libs dbus-glib libXinerama cairo cairo-gobject pango
       - npm run test:ci
   build:
