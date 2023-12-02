@@ -25,7 +25,7 @@ phases:
       - npm i -D puppeteer
       #- sudo amazon-linux-extras install epel -y
       #- sudo yum install -y chromium
-      - sudo yum install -y libXcursor libXdamage libcups libXss libXrandr \ cups-libs dbus-glib libXinerama cairo cairo-gobject pango
+      #- sudo yum install -y libXcursor libXdamage libcups libXss libXrandr \ cups-libs dbus-glib libXinerama cairo cairo-gobject pango
       
       #- npm install
   pre_build:
