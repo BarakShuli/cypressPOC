@@ -21,7 +21,7 @@ phases:
     commands:
       - export CHROME_BIN=/usr/bin/google-chrome
       - npm install -g @angular/cli      
-      - sudo yum install curl
+      #- sudo yum install curl
       - sudo yum install -y libXcursor libXdamage libXrandr
       - sudo yum -y install google-chrome-stable
       - npm run test:ci
