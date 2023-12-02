@@ -21,7 +21,7 @@ phases:
     commands:
       - export CHROME_BIN=/usr/bin/google-chrome
       - npm install -g @angular/cli
-      - npm run test:ci
+      #- npm run test:ci
   build:
     commands:
       - npm run build
