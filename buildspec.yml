@@ -23,8 +23,10 @@ phases:
       - pip install --upgrade awscli
       - npm install -g @angular/cli
       - npm i -D puppeteer
-      - apt-get update && apt-get install -y firefox wget
-      - export FIREFOX_BIN=/usr/bin/firefox
+      - sudo apt-get install xvfb
+      - sudo Xvfb :10 -ac
+      - export DISPLAY=:10
+      - sudo firefox
       #- sudo amazon-linux-extras install epel -y
       #- sudo yum install -y chromium
       #- sudo yum install -y libXcursor libXdamage libcups libXss libXrandr \ cups-libs dbus-glib libXinerama cairo cairo-gobject pango
