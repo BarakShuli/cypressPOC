@@ -28,10 +28,6 @@ phases:
       #- npm install
   pre_build:
     commands:
-      #- export CHROME_BIN=/usr/bin/google-chrome
-      #- sudo yum install atk.x86_64
-      #- sudo yum install -y libgbm-dev
-      #- sudo yum install -y libXcursor libXdamage libcups libXss libXrandr \ cups-libs dbus-glib libXinerama cairo cairo-gobject pango
       - npm run test:ci
   build:
     commands:
