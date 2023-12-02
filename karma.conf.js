@@ -37,6 +37,7 @@ module.exports = function (config) {
       HeadlessChrome: {
         base: "Chrome",
         flags: [
+          "--headless",
           "--no-sandbox", // required to run without privileges in Docker
           "--disable-web-security",
           "--disable-gpu",
