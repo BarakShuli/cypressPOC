@@ -1,5 +1,42 @@
 <p>first-page works!</p>
 <div><button class="startClockBtn" (click)="startClock()">Generate Random Number</button></div>
 <div><button class="navigateToSecondPage" (click)="navigateToSecondPage()">Nevigate to Second</button></div>
-
 <div class="current-date-and-time">{{this.currentDate}}</div>
+
+
+<div *ngIf="showFirstView; else: showSecondView">
+  show first view  1
+</div>
+
+<ng-template #showSecondView>
+  <div>show second view</div>
+</ng-template>
+
+@if (showFirstView) {
+<div>
+    show first view 2
+</div>
+} @else {
+<div>
+    show second view
+</div>
+}
+
+@for (item of optionArray; track $index) {
+    <div>
+        {{item}}
+    </div>
+}
+
+<button (click)="showFirstView=!showFirstView" value="Toggle">Toggle</button>
+
+
+@defer (on hover) {
+    <div style="background-color: green;width:150px;height: 150px;color:white">Large component here!!!</div>
+} @loading(minimum 2s) {
+    <div  style="background-color: yellow;width:150px;height: 150px;">Loding large component now</div>
+} @error {
+    <div>Some error</div>
+} @placeholder {
+    <div  style="background-color: blue;width:150px;height: 150px;color:white">Some placeholder</div>
+}

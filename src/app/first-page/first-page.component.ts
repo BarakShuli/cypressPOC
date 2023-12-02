@@ -12,8 +12,10 @@ import { Router, RouterOutlet } from '@angular/router';
 export class FirstPageComponent implements OnInit {
   currentDate: Date = new Date();
   private route = inject(Router);  
+  showFirstView = true;
+  optionArray = ['Option 1', 'Option 2', 'Option 3', 'Option 4'];
+  
 
-  // add ngOnInit() and call this.twoSum() from it
   ngOnInit() {
     this.getMedianOfTwoArray();
   }
@@ -28,8 +30,6 @@ export class FirstPageComponent implements OnInit {
     this.route.navigateByUrl('/second-page');
   }
 
-  // calculate the median of [1,3] and [2] and return 2.0.
-  // calculate the median of [1,2] and [3,4] and return 2.5.
   getMedianOfTwoArray() {
     let nums1 = [1, 3];
     let nums2 = [2];
