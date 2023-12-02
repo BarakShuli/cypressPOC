@@ -20,10 +20,15 @@ phases:
   pre_build:
     commands:
       - export CHROME_BIN=/usr/bin/google-chrome
-      - npm install -g @angular/cli      
-      #- sudo yum install curl
-      - sudo yum install -y libXcursor libXdamage libXrandr
-      - sudo yum -y install google-chrome-stable
+      - npm install -g @angular/cli
+      - npm i -D puppeteer
+      - npm i -D @angular-devkit/build-angular
+      - sudo yum install -y libXcursor libXdamage libcups libXss libXrandr \ cups-libs dbus-glib libXinerama cairo cairo-gobject pango
+      # Upgrade apt
+      - apt-get upgrade
+
+      # Update libs
+      - apt-get update
       - npm run test:ci
   build:
     commands:
