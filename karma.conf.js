@@ -33,21 +33,15 @@ module.exports = function (config) {
         { type: 'text-summary' }
       ]
     },
+    browsers: ['ChromeHeadlessNoSandbox'],
     customLaunchers: {
-      HeadlessChrome: {
-        base: "Chrome",
-        flags: [
-          "--headless",
-          "--no-sandbox", // required to run without privileges in Docker
-          "--disable-web-security",
-          "--disable-gpu",
-          "--remote-debugging-port=9222"
-        ]
-      }
+        ChromeHeadlessNoSandbox: {
+            base: 'ChromeHeadless',
+            flags: ['--no-sandbox']
+        }
     },
     singleRun: true,
     reporters: ['progress', 'kjhtml'],
-    browsers: ['ChromeHeadless'],
     restartOnFileChange: true
   });
 };
