@@ -11,11 +11,7 @@ phases:
       #- echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
       #- apt-get -y update
       #- yum -y install google-chrome-stable
-      #- sudo apt-get install
-      #- apt-get update
-      #- echo Installing Chrome
       
-      #- apt-get -y install google-chrome-stable
       - npm install
   pre_build:
     commands:
