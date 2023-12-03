@@ -21,6 +21,7 @@ phases:
       - sudo apt-get -y install libatk-bridge2.0-0
       - sudo apt-get -y install libcups2
       - sudo apt-get -y install libxkbcommon-x11-0
+      - sudo apt-get -y install libxcomposite-dev
       #- sudo yum install atk
       - wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
       #- sudo yum install -y ./google-chrome-stable_current_*.rpm
