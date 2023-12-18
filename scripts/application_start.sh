@@ -1,6 +1,5 @@
 #!/bin/bash
-# Add any tasks you need to perform after the application is started
-
-# Example: Run database migrations
-cd /var/www/html/myapp
-python manage.py migrate
+cd /var/www/html/
+mv Node-proxy.conf  /etc/nginx/conf.d
+ng serve
+npm start >/dev/null 2>&1 &
