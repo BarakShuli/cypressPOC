@@ -1,5 +1,4 @@
-#!/bin/bash
-# Add any tasks you need to perform before installing the new version
+echo "Running BeforeInstall script..."
 
-# Example: Stop the existing service
-sudo service myapp stop
+cd /var/www/CypressPOC
+npm install
