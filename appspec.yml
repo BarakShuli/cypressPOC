@@ -8,8 +8,4 @@ Resources:
         NetworkConfiguration:
           AwsvpcConfiguration:
             Subnets:["subnet-0d1eda1f29bef2c95"],
-            SecurityGroups:[
-    						"sgr-02e7bf16873250285",
-    						"sgr-059420ec9960a5c0b",
-                "sgr-0821108f19d442db3"
-    					],
+            SecurityGroups:["sgr-02e7bf16873250285","sgr-059420ec9960a5c0b","sgr-0821108f19d442db3"],
