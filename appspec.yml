@@ -1,21 +1,15 @@
 version: 0.0
-os: linux
-files:
-  - source: ./dist
-    destination: /tmp/CodeDeployExample
-
-hooks:
-  BeforeInstall:
-    - location: scripts/before-install.sh
-      timeout: 300
-      runas: ubuntu
-
-  AfterInstall:
-    - location: scripts/after-install.sh
-      timeout: 300
-      runas: ubuntu
-
-  ApplicationStart:
-    - location: scripts/application-start.sh
-      timeout: 300
-      runas: ubuntu
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: arn:aws:s3:::angular-project-bucket-jan24
+        PlatformVersion: "LATEST"
+        NetworkConfiguration:
+          AwsvpcConfiguration:
+            Subnets:["subnet-0d1eda1f29bef2c95"],
+            SecurityGroups:[
+    						"sgr-02e7bf16873250285",
+    						"sgr-059420ec9960a5c0b",
+                "sgr-0821108f19d442db3"
+    					],
